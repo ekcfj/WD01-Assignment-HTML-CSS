@@ -1,0 +1,22 @@
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+//   padding: 10px;
+}
+header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+article {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    padding: 2em;
+}
+section {
+    display: flex;
+    padding: 2em;
+}

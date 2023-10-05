@@ -1,0 +1,16 @@
+@use "./variables" as v;
+h1 {
+  font: {
+    family: v.$font;
+    size: 5em;
+    position: absolute;
+  }
+  color: v.$covertext;
+}
+body {
+  font: {
+    family: v.$fontb;
+    size: 1em;
+  }
+  color: v.$text;
+}
