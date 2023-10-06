@@ -1,7 +1,6 @@
 .container {
-  max-width: 1500px;
+  //   max-width: 1800px;
   margin: 0 auto;
-//   padding: 10px;
 }
 header {
   height: 100%;
@@ -10,13 +9,38 @@ header {
   justify-content: center;
   padding: 2em;
 }
+
 article {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    padding: 2em;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  padding: 2em;
 }
 section {
-    display: flex;
-    padding: 2em;
+  display: flex;
+  padding: 2em;
+}
+
+main {
+  margin-top: 30px;
+}
+
+footer {
+  height: 400px;
+  //   position:relative;
+  display: flex;
+  padding: 5em;
+  align-items: center;
+  column-gap: 3em;
+  justify-content: center;
+}
+footer-column-1 {
+  width: 20%;
+  align-content: left;
+  display: table;
+}
+footer-column-2,
+footer-column-3 {
+  width: 40%;
+  display: table;
 }
