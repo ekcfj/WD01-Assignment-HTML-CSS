@@ -23,6 +23,7 @@ header {
 nav {
   vertical-align: middle;
   display: table-cell;
+  justify-content: space-between;
 }
 
 nav ul {
@@ -117,13 +118,21 @@ footer-column-1 img {
     width: 100px;
     height: 100px;
   }
-
+  .footer-columns {
+    display: flex;
+  }
+  
+  footer-column-2,
+  footer-column-3 {
+    flex: 1;
+  }
 footer-column-2 nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+    list-style-type: none;
+  padding: 0;
 }
 footer-column-2 a {
     text-decoration: none;
@@ -136,7 +145,10 @@ footer-column-2 a {
   }
   footer-column-3 ul {
     list-style-type: none;
-    padding: 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
   }
   
   footer-column-3 li {
