@@ -1,0 +1,28 @@
+@use "./variables" as v;
+h1 {
+  font: {
+    family: v.$font;
+    size: 5em;
+  }
+  color: v.$covertext;
+}
+h2 {
+    font: {
+      family: v.$font;
+      size: 4em;
+    }
+  }
+body {
+  font: {
+    family: v.$fontb;
+    size: 1em;
+  }
+  color: v.$text;
+}
+large-text {
+  font: {
+    family: v.$fontb;
+    size: 2em;
+  }
+  color: v.$brand;
+}

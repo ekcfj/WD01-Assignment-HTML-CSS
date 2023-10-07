@@ -1,0 +1,216 @@
+@use "./variables" as v;
+
+header {
+  background: rgb(248, 248, 248);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+figure,
+.primary-navigation {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.primary-navigation ul {
+  text-align: right;
+}
+
+.primary-navigation ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  margin: 0 25px;
+  color: #111111;
+  float: left;
+  display: block;
+}
+
+.primary-navigation a:hover {
+  color: v.$brand;
+  border-bottom: 3px solid v.$brand;
+}
+
+.primary-navigation a.active {
+  color: v.$brand;
+  border-bottom: 3px solid v.$brand;
+}
+
+.home-parallax {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg");
+  height: 600px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+}
+.parallax-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-text {
+  background-color: rgb(247, 242, 242);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  height: 200px;
+  text-align: center;
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin-bottom: 5em;
+}
+.homepage-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  grid-column: 1 / span 3;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+}
+
+
+// footer {
+//     color: black;
+//     background: linear-gradient(to top, v.$brand, white);
+//     margin-bottom: 20px;
+// }
+
+// // footer-gradient{
+// //   top: 0;
+// //   left: 0;
+// //   width: 100%;
+// //   height: 100%;
+// //   position: absolute;
+// //   z-index: -1;
+// // }
+
+// footer-column-1 img {
+//     width: 100px;
+//     height: 100px;
+//   }
+
+// footer-menu {
+//     // display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     color: #111111;
+//     width: 50%;
+//     margin: 0 auto;
+//   }
+
+//   footer-menu a {
+//     text-decoration: none;
+//     margin: 0 25px;
+//     color: #111111;
+//     float: left;
+//     display: block;
+//   }
+
+//   footer-menu a:hover {
+//     color: v.$brand;
+//     border-bottom: 3px solid v.$brand;
+//   }
+
+//   footer-menu a:active {
+//     color: v.$brand;
+//     border-bottom: 3px solid v.$brand;
+//   }
+
+//   footer-column-3 ul {
+//     list-style-type: none;
+//   }
+
+//   footer-column-3 li {
+//     padding: 0.5em 0;
+//   }
+// footer {
+//     background: linear-gradient(to top, v.$brand, white);
+//     color: black;
+//     padding: 5em;
+//   }
+
+//   .footer-container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//   }
+
+//   .footer-column-1,
+//   .footer-column-3 {
+//     width: 25%;
+//   }
+
+//   .footer-menu {
+//     width: 50%;
+//   }
+
+//   .footer-menu ul {
+//     list-style: none;
+//     padding: 0;
+//   }
+
+//   .footer-menu li {
+//     display: inline-block;
+//     margin: 0 10px;
+//   }
+
+//   .footer-menu a {
+//     color: black;
+//     text-decoration: none;
+//   }
+
+//   .footer-menu a:hover {
+//     color: v.$brand;
+//   }
+
+//   .footer-header {
+//     font-size: 20px;
+//     margin-bottom: 10px;
+//   }
+
+//   .footer-column-3 ul {
+//     padding: 0;
+//     margin: 0;
+//   }
+
+//   .footer-column-3 li {
+//     margin-bottom: 10px;
+//   }
+
+// h1 {
+//   font-size: 60px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// .text {
+//   height: 1000px;
+//   max-width: 720px;
+//   margin: 0 auto;
+// }
+
+// .text h2 {
+//   margin: 50px;
+//   text-align: center;
+// }
