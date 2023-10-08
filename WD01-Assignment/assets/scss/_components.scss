@@ -1,98 +1,11 @@
 @use "./variables" as v;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-header {
-  display: table;
-  background: rgb(248, 248, 248);
-  padding: 20px;
-  width: 100%;
-  height: 80px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
-nav {
-  vertical-align: middle;
-  display: table-cell;
-  justify-content: space-between;
-}
-
-nav ul {
-  text-align: right;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav a {
-  text-decoration: none;
-  margin: 0 25px;
-  color: #111111;
-  float: left;
-  display: block;
-}
-
-nav a:hover {
-  color: v.$brand;
-  border-bottom: 3px solid v.$brand;
-}
-
-nav a.active {
-  color: v.$brand;
-  border-bottom: 3px solid v.$brand;
-}
-
-// @media (max-width: 768px) {
-//   header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-
-//   nav {
-//     display: none;
-//   }
-
-//   .hamburger-menu {
-//     display: block;
-//     width: 40px;
-//     height: 40px;
-//     cursor: pointer;
-//   }
-
-//   .hamburger-menu::before {
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     height: 3px;
-//     background-color: rgb(249, 248, 248);
-//     margin-top: 5px;
-//     margin-bottom: 5px;
-//   }
-
-//   .hamburger-menu::after {
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     height: 3px;
-//     background-color: black;
-//     margin-top: 5px;
-//   }
-// }
-
-.parallax {
+   
+/*Parallax homepage image*/
+.home-parallax {
   background-image: url("https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg");
-  height: 600px;
+  height: 700px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,75 +13,176 @@ nav a.active {
   /* Parallax scrolling effect */
   background-attachment: fixed;
 }
-footer {
-    color: black;
-    background: linear-gradient(to top, v.$brand, white);
-}
-
-footer-gradient{
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-footer-column-1 img {
-    width: 100px;
-    height: 100px;
-  }
-  .footer-columns {
-    display: flex;
-  }
-  
-  footer-column-2,
-  footer-column-3 {
-    flex: 1;
-  }
-footer-column-2 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-  padding: 0;
-}
-footer-column-2 a {
-    text-decoration: none;
-    color: #111111;
-  }
-  
-  footer-column-2 a:hover {
-    color: v.$brand;
-    border-bottom: 3px solid v.$brand;
-  }
-  footer-column-3 ul {
-    list-style-type: none;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; 
-  }
-  
-  footer-column-3 li {
-    padding: 0.5em 0;
-  }
-h1 {
-  font-size: 60px;
+.parallax-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.text {
-  height: 1000px;
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.text h2 {
-  margin: 50px;
   text-align: center;
 }
+
+.about-parallax {
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/06/17/43/water-2208931_1280.jpg");
+  height: 700px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+}
+ /* Hero Text Highlight*/
+.hero-text {
+  background-color: rgb(247, 242, 242);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  height: 200px;
+  text-align: center;
+  
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 5em;
+}
+.text-padding {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: left;
+}
+ /*Gallery*/
+.homepage-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  gap: 10px;
+  background-color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/*Header and Text section*/
+.copy-header-text {
+    padding-top: 5em;
+    padding-bottom: 15em;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/*Two-Column - Image and Text Layout*/
+.two-column-img-text {
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+.image-column {
+    flex: 1;
+  }
+  .text-column {
+    flex: 2;
+    padding: 2rem;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .two-column-img-text {
+      flex-direction: column;
+    }
+  
+    .image-column {
+      order: 2;
+    }
+  }
+
+
+  
+  /*Solid Button style*/
+button {
+    background-color: v.$brand;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 10px;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    width: 50%;
+}
+button:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
+/*Outline Button style*/
+button.outline {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    margin-top: 5em;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    width: 60%;
+}
+button.outline:hover {
+    background-color: v.$brand;
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
+
+  /*Form*/
+  form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+
+/*Video*/
+.video-section {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    justify-content: center;
+    text-align: center;
+  }  
+  /*Map*/
+  .map {
+    margin-top: 5em;
+    height: 400px;
+  }
+ 

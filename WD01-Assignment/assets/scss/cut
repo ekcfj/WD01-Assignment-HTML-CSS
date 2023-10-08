@@ -1,0 +1,256 @@
+/* // header {
+//   background: rgb(248, 248, 248);
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 10;
+// }
+
+// figure,
+// .primary-navigation {
+//   vertical-align: middle;
+//   display: table-cell;
+//   flex-shrink: 0;
+// }
+
+// .primary-navigation ul {
+//   text-align: right;
+// }
+
+// .primary-navigation ul li {
+//   display: inline-block;
+//   list-style-type: none;
+// }
+
+// .primary-navigation a {
+//   text-decoration: none;
+//   margin: 0 25px;
+//   color: #111111;
+//   float: left;
+//   display: block;
+// }
+
+// .primary-navigation a:hover {
+//   color: v.$brand;
+//   border-bottom: 3px solid v.$brand;
+// }
+
+// .primary-navigation a.active {
+//   color: v.$brand;
+//   border-bottom: 3px solid v.$brand;
+// }
+// .primary-navigation {
+//     position: relative;
+//   }
+  
+//   /*Mobile Menu*/
+/* .mobile-navigation {
+//     display: none;
+//   }
+//   .mobile-navigation.active {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   @media (max-width: 768px) {
+//     .mobile-navigation {
+//       display: table-cell;
+//       vertical-align: middle;
+//       text-align: right;
+//     }
+  
+//     .primary-navigation {
+//       display: none;
+//     }
+//   }
+//   .mobile-navigation {
+//     position: relative;
+//     flex-shrink: 0;
+//   }
+  
+//   .mobile-navigation .hamburger-icon {
+//     position:absolute;
+//     top: 0;
+//     left: 0;
+//     width: 30px;
+//     height: 30px;
+//     cursor: pointer;
+//     display: none;
+//     font-family: v.$hamburger-icon;
+//     font-size: 30px;
+//     color: v.$brand;
+//     text-decoration: none;
+//   }
+  
+//   .mobile-navigation.active .hamburger-icon {
+//     display: flex;
+//     flex-direction: column;
+//   }
+  
+//   @media (max-width: 768px) {
+//     .mobile-navigation {
+//       display: flex;
+//       flex-direction: column;
+//     }
+  
+//     .mobile-navigation ul {
+//       text-align: center;
+//     }
+  
+//     .mobile-navigation a {
+//       margin: 0 0 10px;
+//     }
+  
+//     .mobile-navigation .hamburger-icon {
+//       display: block;
+//     }
+//   }
+//   .mobile-navigation ul li {
+//     display: list-item;
+//     list-style-type: none;
+//     text-decoration-line: none;
+//   }
+
+// .navigation {
+//     @include flex-shrink-0;
+  
+//     ul {
+//       text-align: right;
+//     }
+  
+//     li {
+//       display: inline-block;
+//       list-style-type: none;
+//     }
+  
+//     a {
+//       text-decoration: none;
+//       margin: 0 25px;
+//       color: $brand-color;
+//       float: left;
+//       display: block;
+//     }
+  
+//     a:hover {
+//       color: v.$brand;
+//       border-bottom: 3px solid v.$brand;
+//     }
+  
+//     a.active {
+//       color: v.$brand;
+//       border-bottom: 3px solid v.$brand;
+//     }
+//   }
+  
+//   .navigation--primary {
+//     position: relative;
+//   }
+  
+//   .navigation--mobile {
+//     display: none;
+  
+//     &.active {
+//       display: flex;
+//       flex-direction: column;
+//     }
+  
+//     @media (max-width: 768px) {
+//       display: table-cell;
+//       vertical-align: middle;
+//       text-align: right;
+//     }
+//   }
+  
+//   .hamburger-icon {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 30px;
+//     height: 30px;
+//     cursor: pointer;
+//     display: none;
+//     font-family: v.$hamburger-icon;
+//     font-size: 5em;
+//     color: v.$brand;
+//     text-decoration: none;
+  
+//     @media (max-width: 768px) {
+//       display: block;
+//     }
+//   }
+  
+//   .navigation--mobile.active .hamburger-icon {
+//     display: flex;
+//     flex-direction: column;
+//   }
+  
+//   @media (max-width: 768px) {
+//     .navigation--mobile {
+//       display: flex;
+//       flex-direction: column;
+//     }
+  
+//     .navigation--mobile ul {
+//       text-align: center;
+//     }
+  
+//     .navigation--mobile a {
+//       margin: 0 0 10px;
+//     }
+//   }
+  
+//   .navigation--mobile ul li {
+//     display: list-item;
+//     list-style-type: none;
+//     text-decoration: none;
+//   }
+// .mobile-navigation {
+//     display: none;
+//   }
+  
+//   .hamburger-icon {
+//     display: block;
+//     width: 30px;
+//     height: 30px;
+//     cursor: pointer;
+//   }
+  
+//   .mobile-navigation.active {
+//     display: block;
+//   }
+  
+//   @media (max-width: 768px) {
+//     .mobile-navigation {
+//       display: block;
+//     }
+  
+//     .primary-navigation {
+//       display: none;
+//     }
+//   } */
+
+
+/* Menu html
+<!-- <figure class="primary-navigation">
+<a href="index.html">
+  <img src = "./assets/icons/logoipsum-297.svg" alt="logo"/>
+</a>
+</figure>
+<nav class="primary-navigation">
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+<nav class="mobile-navigation">
+<a href="index.html">
+    <img src = "./assets/icons/logoipsum-297.svg" alt="logo"/>
+  </a>
+<a href="#" class="hamburger-icon">&#9776;</a>
+
+<ul class="mobile-navigation">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav> --> */

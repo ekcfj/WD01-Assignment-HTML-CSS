@@ -2,62 +2,141 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <title>Home</title>
+    <meta name="description" content="This is the home page">
+    <meta name="keywords" content="ocean-photos, ocean-waves">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <script src="./assets/js/scripts.js"></script>
+    <title>Home</title>
   </head>
-  <body>
-    <header class="sticky">
-          <a href="index.html">
-            <img src="https://img.logoipsum.com/297.svg" alt="logo">
-          </a>
-        <nav>
-          <ul>
+<body>
+
+<header>
+    <div class="navbar">
+        <div>
+            <a href="index.html">
+                <img src="assets/icons/logoipsum-297.svg" alt="logo">
+            </a>
+        </div>
+        <ul class="links">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-    </header> 
-    <main class="container">
-        <div class="parallax" >
-            <h1>Welcome</h1>
-        </div> 
-      <background class="fluid">
-    </main>
-
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quam iste dolorum ullam ducimus hic libero amet corporis, impedit, porro dolores accusamus veniam ut id, fugiat ratione facere recusandae! Laboriosam.Facilis hic ipsa qui fugit aut molestiae sunt omnis obcaecati incidunt ipsum, voluptates illum error nihil provident earum praesentium placeat voluptatum dolores itaque aliquid illo voluptas suscipit quia. Ducimus, dolorum.<p>Vitae autem aut id quidem dignissimos ratione neque animi voluptatem deserunt nostrum laboriosam facilis accusantium ut rem mollitia qui eius corporis est repellendus eligendi repudiandae enim eveniet, aperiam error. Ipsa.</p><p>Quam quos officia harum, totam, nihil corrupti molestias dolore necessitatibus adipisci minus blanditiis obcaecati veniam cumque animi beatae, et eveniet. Velit molestias, rem quas fuga laboriosam eaque culpa delectus aliquam.</p><p>Nemo explicabo nesciunt quod temporibus dolorum alias earum eius, voluptates ipsum soluta dolor suscipit perspiciatis! Illo ducimus doloribus voluptatem. Quod, temporibus. Voluptatem vero vitae soluta, quod quos impedit quasi facere.</p><p>Debitis consequatur, porro tempore, facere, neque impedit quas quasi iusto asperiores expedita numquam fuga officiis natus repellat omnis. Fuga sit vitae excepturi, nisi pariatur perspiciatis explicabo temporibus qui ullam velit!</p><p>Labore autem, voluptates voluptatum perferendis placeat architecto laudantium possimus fuga? Nam sequi id quibusdam est sapiente, quasi fugit corporis! Sunt alias ex dolore quia assumenda fugit expedita, iure corrupti voluptas.</p><p>Nisi aliquid asperiores blanditiis. Numquam minus, ullam deleniti saepe libero provident voluptate aspernatur accusamus sapiente perferendis magnam eius, nulla enim? Omnis vitae, voluptates asperiores corporis odit dolore at nesciunt similique.</p><p>Esse, aliquam. Iure non, mollitia eveniet deserunt veritatis, recusandae facilis doloribus sint labore ea libero! Repellat autem veniam unde magnam! Ipsum incidunt vitae repellat voluptatum provident amet ea cupiditate in.</p><p>Quos, nihil. Sed nobis quae ullam! At, dolorem in quibusdam quaerat omnis quae, possimus porro doloremque nostrum exercitationem quam distinctio quos doloribus ratione laborum, minima voluptatem rem quod id enim.</p><p>Voluptatibus odit aliquam rerum sunt ratione asperiores eius veniam tempore voluptas! Possimus iure repellendus nesciunt commodi accusantium dolores earum fugit voluptatum eos, neque, optio assumenda, necessitatibus impedit fugiat aspernatur facilis.</p><p>Facere corrupti consectetur quaerat officiis obcaecati at ut, suscipit ipsam eius, ab iusto natus accusantium blanditiis, repellat odio sed praesentium distinctio deserunt voluptatum? Nulla molestiae dolores, numquam eligendi aliquam porro.</p>
-
-
-    <footer class="footer">
-        <div class="footer-gradient"></div>
-        <div class="footer-container"></div>
-          <div class="footer-column-1">
-            <a href="index.html">
-                <img src="https://img.logoipsum.com/297.svg" alt="logo">
-              </a>
-            <h3 class="footer-header">This is Us</h3>
-          </div>
-          <div class="footer-column-2">
-            <nav>
-                <ul class="footer-column-2 nav">
-                <li> <a class="active" href="index.html">Home</a></li> 
-                 <Li><a href="about.html">About</a></Li>
-                 <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </nav>
-</div>
-            <div class="footer-column-3">
-                <h3 class="footer-header">Contact Us</h3>
-            <ul>
-            <li>123 Main Street</li>
-            <li>Anytown, CA 12345</li>
-            <li>(123) 456-7890</li>
         </ul>
+        <a href="contact.html" class="action_btn">Contact</a>
+        <div class="toggle_btn">
+            <i class="hamburger-icon">&#9776;</i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+        <ul class="links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="contact.html" class="action_btn">Contact</a>
+    </div>
+
+</header>
+
+    <main>
+      <section id="Banner">
+        <div class="home-parallax">
+          <div class="parallax-text">
+            <h1 class=banner-text>Welcome</h1>
+            <a href="./about.html">
+              <button class="outline">Learn More</button>
+            </a>
           </div>
         </div>
-      </footer>
-      
+      </section>
+
+      <section id="about-summary">
+        <div class="hero-text">
+          <large-text
+            >Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</large-text>
+        </div>
+      </section>
+      <section id="Info" , class="container">
+        <div class="copy-header-text">
+            <h2>This section</h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sed
+              ipsa quae possimus distinctio maiores iusto pariatur, cum odit, ad
+              odio iste nobis neque ex vitae inventore dolore debitis
+              architecto.</p
+            ><p
+              >Esse accusamus neque explicabo blanditiis autem iusto cumque
+              libero quasi vitae aliquam exercitationem, alias voluptate porro
+              maxime, temporibus, quae nihil error doloremque voluptatum sequi.
+              Similique cumque rerum ullam nulla reprehenderit?</p
+            ><p
+              >Consequuntur modi sunt quisquam magni distinctio magnam, sequi
+              facilis ad, aliquam reiciendis blanditiis inventore vitae omnis at
+              ex ipsa. Quos, quas deserunt eos incidunt culpa cum ut. A,
+              quisquam possimus?</p
+            >
+          </p>
+          <a href="#home-gallery">
+            <button>Ocean Gallery</button>
+          </a>
+        </div>
     
+        <div class="two-column-img-text">
+            <div class="image-column">
+              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="Beach-at-sunset">
+            </div>
+            <div class="text-column">
+              <h2>This is the heading</h2>
+              <p>This is the text content of the right column.</p>
+              
+            </div>
+          </section>
+          
+      <section id="home-gallery">
+        <div class="section-header">
+          <h2>Ocean Gallery</h2>
+          <div class="container" , class="homepage-gallery">
+            <img src="https://picsum.photos/id/1051/400" alt="sea" />
+            <img src="https://picsum.photos/id/1052/400" alt="waves" />
+            <img src="https://picsum.photos/id/1053/400" alt="ocean-waves" />
+            <img src="https://picsum.photos/id/77/400" alt="pier" />
+            <img src="https://picsum.photos/id/1055/400" alt="ocean" />
+            <img src="https://picsum.photos/id/44/400" alt="ocean" />
+            <img src="https://picsum.photos/id/1057/400" alt="seaside" />
+            <img src="https://picsum.photos/id/16/400" alt="open-water" />
+            <img src="https://picsum.photos/id/14/400" alt="open-water" />
+          </div>
+          <a href="./contact.html">
+            <button>Get In Touch</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-column-1">
+        <a href="index.html">
+          <img src="./assets/icons/logoipsum-297.svg" alt="logo" class="footer-logo" />
+        </a>
+      </div>
+      <nav class="footer-menu">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-column-3">
+        <h4 class="footer-header">Contact Us</h4>
+        <ul>
+          <li>123 Main Street</li>
+          <li>Anytown, CA 12345</li>
+          <li>(123) 456-7890</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

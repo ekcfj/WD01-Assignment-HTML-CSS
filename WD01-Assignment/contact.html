@@ -2,22 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+
     <title>Contact</title>
+    <meta name="description" content="This is the contact page" />
+    <meta name="keywords" content="contact-form, message" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="path/to/normalize.css" />
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
   </head>
   <body>
-    <header>
-        <figure>
-          <a href="index.html">
-            <img src="https://img.logoipsum.com/297.svg" alt="logo">
-          </a>
-        </figure>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header class="sticky">
+      <figure class="primary-navigation">
+        <a href="index.html">
+          <img src="https://img.logoipsum.com/297.svg" alt="logo" />
+        </a>
+      </figure>
+      <nav class="primary-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section><h1>Hi</h1></section>
+      <section>
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
+          facere?
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          mollitia, laborum ratione nisi maxime ipsam debitis esse odit, quam
+          sequi porro hic voluptate explicabo in.
+        </p>
+      </section>
+      <form action="mailto:youremail@example.com" method="post">
+        <input type="text" name="name" placeholder="Your name" />
+        <input type="email" name="email" placeholder="Your email" />
+        <textarea name="message" placeholder="Your message"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+
+      <section id="map">
+        <div class="map">
+          <iframe
+            width="100%", height="100%"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=172.6346004009247%2C-43.53790938228136%2C172.63739526271826%2C-43.53638691066181&amp;layer=mapnik"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-43.53715/172.63600">View Larger Map</a></small></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-column-1">
+        <a href="index.html">
+            <img src = "./assets/icons/logoipsum-297.svg" alt="logo"/>
+        </a>
+      </div>
+      <nav class="footer-menu">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-column-3">
+        <h4 class="footer-header">Contact Us</h4>
+        <ul>
+          <li>123 Main Street</li>
+          <li>Anytown, CA 12345</li>
+          <li>(123) 456-7890</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

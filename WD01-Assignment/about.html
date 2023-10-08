@@ -2,22 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    
     <title>About</title>
+    <meta name="description" content="This is the about page.">
+    <meta name="keywords" content="about-business, ocean-photography">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="path/to/normalize.css">
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    
   </head>
   <body>
-    <header>
-        <figure>
-          <a href="index.html">
-            <img src="https://img.logoipsum.com/297.svg" alt="logo">
+    <header class="sticky">
+      <figure class="primary-navigation">
+        <a href="index.html">
+            <img src = "./assets/icons/logoipsum-297.svg" alt="logo"/>
+        </a>
+      </figure>
+      <nav class="primary-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="Banner">
+        <div class="about-parallax">
+          <div class="parallax-text">
+            <h1 class="banner-text">About</h1>
+          </div>
+        </div>
+      </section>
+
+      
+    <section class="text-padding">
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
+          facere?
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, pariatur? Optio accusamus ipsam impedit rerum laborum doloremque quod. Accusantium eligendi neque reprehenderit rerum odit nisi soluta eum? Enim vel itaque fugit laudantium. Hic eos explicabo nostrum vero sunt, est, laboriosam commodi saepe in at pariatur quasi porro minus vel magnam harum ducimus nam provident aliquam, molestias qui? Sit nemo sapiente quam aliquam sed est dolorem beatae dignissimos iure accusamus qui suscipit voluptatem quas, tenetur pariatur voluptatibus, molestias magnam. Maxime eos quis excepturi ducimus commodi aspernatur quae ex sit ipsa odio suscipit, dolor aperiam ad. Sed perspiciatis natus consectetur ipsam assumenda!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, pariatur? Optio accusamus ipsam impedit rerum laborum doloremque quod. Accusantium eligendi neque reprehenderit rerum odit nisi soluta eum? Enim vel itaque fugit laudantium. Hic eos explicabo nostrum vero sunt, est, laboriosam commodi saepe in at pariatur quasi porro minus vel magnam harum ducimus nam provident aliquam, molestias qui? Sit nemo sapiente quam aliquam sed est dolorem beatae dignissimos iure accusamus qui suscipit voluptatem quas, tenetur pariatur voluptatibus, molestias magnam. Maxime eos quis excepturi ducimus commodi aspernatur quae ex sit ipsa odio suscipit, dolor aperiam ad. Sed perspiciatis natus consectetur ipsam assumenda!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, pariatur? Optio accusamus ipsam impedit rerum laborum doloremque quod. Accusantium eligendi neque reprehenderit rerum odit nisi soluta eum? Enim vel itaque fugit laudantium. Hic eos explicabo nostrum vero sunt, est, laboriosam commodi saepe in at pariatur quasi porro minus vel magnam harum ducimus nam provident aliquam, molestias qui? Sit nemo sapiente quam aliquam sed est dolorem beatae dignissimos iure accusamus qui suscipit voluptatem quas, tenetur pariatur voluptatibus, molestias magnam. Maxime eos quis excepturi ducimus commodi aspernatur quae ex sit ipsa odio suscipit, dolor aperiam ad. Sed perspiciatis natus consectetur ipsam assumenda!</p>
+    </section>
+  <section class="video-section">
+    <h3>Ocean Photography Tips</h3>
+    <iframe width="820" height="500" src="https://www.youtube.com/embed/niJ3BJAUGbQ?si=WrCrSkebqFMVpM3f&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+
+      <section>
+    <div class="two-column-img-text">
+        <div class="image-column">
+          <img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="Beach-at-sunset">
+        </div>
+        <div class="text-column">
+          <h2>This is the heading</h2>
+          <p>This is the text content of the right column.</p>
+          <a href="index.html#home-gallery">
+            <button>Ocean Gallery</button>
           </a>
-        </figure>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-column-1">
+        <a href="index.html">
+            <img src = "./assets/icons/logoipsum-297.svg" alt="logo"/>
+        </a>
+      </div>
+      <nav class="footer-menu">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-column-3">
+        <h4 class="footer-header">Contact Us</h4>
+        <ul>
+          <li>123 Main Street</li>
+          <li>Anytown, CA 12345</li>
+          <li>(123) 456-7890</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

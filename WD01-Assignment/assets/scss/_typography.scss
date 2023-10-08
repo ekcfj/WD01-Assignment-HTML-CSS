@@ -1,16 +1,61 @@
 @use "./variables" as v;
-h1 {
+.banner-text {
   font: {
     family: v.$font;
     size: 5em;
   }
   color: v.$covertext;
 }
+h1 {
+    font: {
+      family: v.$font;
+      size: 5em;
+    }
+
+  }
+h2 {
+    font: {
+      family: v.$font;
+      size: 4em;
+    }
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+  h3 {
+    font: {
+      family: v.$font;
+      size: 3em;
+    }padding-bottom: .5em;
+  }
+  h4 {
+    font: {
+      family: v.$font;
+      size: 2em;
+    }padding-bottom: .2em;
+  }
 body {
   font: {
     family: v.$fontb;
-    size: 1em;
+    size: 1.1em;
   }
   color: v.$text;
+}
+
+p {
+    margin-bottom: 20px;
+  }
   
+large-text {
+  font: {
+    family: v.$fontb;
+    size: 2em;
+  }
+  color: v.$brand;
+}
+
+button {
+    font: {
+        family: v.$font;
+        size: 16px;
+    }
 }
